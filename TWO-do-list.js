@@ -5,7 +5,7 @@ function loadScript(){
 
     function addItem(item){
         const ul = document.querySelector("ul")
-        if (taskInput.value.length){
+        if (taskInput.value.length || item){
             const li = document.createElement("li")
             li.classList.add =("liItem")
             li.textContent = item || taskInput.value
